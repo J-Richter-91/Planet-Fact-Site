@@ -1,5 +1,5 @@
 export let planetData;    
-fetch('/data.json')
+fetch('./data.json')
   .then(res => res.json())
   .then(json => {
     planetData = json;
