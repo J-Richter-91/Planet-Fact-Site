@@ -1,11 +1,10 @@
 export let planetData;    
-    fetch('/data.json')
-    .then(function(res){ return res.json();})
-    .then(
-        function(json){
-          planetData = json;
-        }
-      )
+fetch('/data.json')
+  .then(res => res.json())
+  .then(json => {
+    planetData = json;
+  });
+
 
 export const currentPlanet = {
     planetName: 'earth',
