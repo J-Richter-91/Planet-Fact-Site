@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@700&display=swap');
+
+:root{
+    --white: #FFFFFF;
+    --black: #070724;
+    --dark-gray: #38384F;
+    --light-gray: #838391;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--black);
+    background-image: url("assets/background-stars.svg");
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+.mobile-navigation{
+    display: none;
+}
+
+.mobile-content-links-container{
+    display: none;
+}
+
+.hamburger-icon{
+    opacity: 0;
+}
+
+.page-title{
+    color:white;
+    font-family: antonio;
+    margin-right: auto;
+    margin-left: 32px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+ul{
+    display: flex;
+    gap: 33px;
+    color: var(--white);
+    list-style: none;
+    margin-right: 41px;
+    color: #FFF;
+    font-family: Spartan;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 227.273% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+a:hover{
+    cursor: pointer;
+    color:#838391;
+    transition: .3s;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 350px 350px;;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  column-gap: 55px
+
+}
+
+
+.planet-img{
+    width: 350px;
+    margin-top: 200px;
+    justify-self: right;
+    
+}
+
+.planet-info-container{
+    margin-top: 160px;
+    width: 100%;
+    justify-self:left;
+}
+
+.planet-name{
+    color: var(--white);
+    font-family: Antonio;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.planet-description{
+    color: var(--white);
+    font-family: Spartan;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 178.571% */
+}
+
+.content-links-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    grid-column-start: 2;
+    margin-top: 0;
+}
+
+.content-links {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    border: 1px solid #ffffff1e;
+}
+
+.content-links.active.earth {
+    background-color: #6D2ED5;
+}
+
+.content-links.active.mercury {
+    background-color: #419EBB;
+}
+
+.content-links.active.venus{
+    background-color: #EDA249;
+}
+
+.content-links.active.mars {
+    background-color: #D14C32;
+}
+
+.content-links.active.jupiter {
+    background-color: #D83A34;
+
+}
+
+.content-links.active.saturn {
+    background-color: #CD5120 ;
+}
+
+.content-links.active.uranus {
+    background-color: #1EC1A2;
+}
+
+.content-links.active.neptune {
+    background-color: #6D2ED5;
+}
+
+
+.content-links:hover{
+    cursor: pointer;
+}
+
+.content-links:hover:not(.active){
+    background-color: #838391;
+    transition: .3s;
+}
+
+.content-number{
+    margin-left: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.stat-container{
+    border: 1px solid #ffffff1e;
+    width: 255px;
+    height: 128px;
+    flex-shrink: 0;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+    
+}
+
+.stat-heading{
+    color: var(--white);
+    font-family: Spartan;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px; /* 227.273% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.rotation, .revolution, .radius, .temp{
+    color: var(--white);
+    font-family: Antonio;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+
+  
+
+@media only screen and (max-width:900px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .page-title{
+       margin-right: auto;
+       margin-left: auto;
+    }
+    
+
+   .planet-img{
+   grid-column: 1/ span 2;
+   justify-self: center;
+    
+   }
+
+   .planet-info-container{
+        width: 339px;
+        margin-top: 0;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        align-self: center;
+       
+    }
+
+    .planet-description{
+        width: 80%;
+    }
+
+    .content-links-container{
+       grid-row-start: 2;
+       grid-column-start: 2;
+       align-self: center;
+       margin-top: 120px;
+    }
+
+    .stat-container{
+        width: 150px;
+    }
+
+    .stat-container > p{
+        font-size: 1.8rem;
+    }
+}
+
+ 
+@media only screen and (max-width: 700px) {
+
+    .navigation{
+        display: none;
+    }
+
+    .mobile-navigation-container{
+        background-color: #070724;
+        width: 50%;
+        margin-left: auto;
+    }
+
+    .mobile-navigation{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 45%;
+        margin-left: auto;
+    }
+
+    .mobile-navigation > li  {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .mobile-navigation > li > a  {
+        width: 25%;
+    }
+
+   
+
+
+    nav{
+        position: relative;
+        flex-direction: row;
+    }
+
+    .page-title{
+        margin-left: 15px;
+    }
+
+    .hamburger-icon{
+        opacity: 1;
+        margin-left: auto;
+        margin-right: 85px;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    
+    }
+    .planet-img {
+        grid-column: auto;
+        grid-row: auto; /* Reset grid-row */
+    }
+    .planet-info-container {
+        align-self: center;
+        justify-self: center;
+        grid-column: auto;
+        grid-row: auto; /* Reset grid-row */
+        text-align: center;
+    }
+    .content-links-container {
+      display: none;
+    }
+
+    .mobile-content-links-container{
+        display: flex;
+    }
+
+    .content-links{
+        gap: 25px;
+    }
+
+    .planet-description{
+        align-self: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    footer{
+       display: flex;
+       flex-direction: column;
+       gap: 5px;
+    }
+
+    .stat-container{
+        width: 100%;
+        align-self: center;
+        margin-top: 5px;
+        height: 100px;
+    }
+
+    .content-links{
+        margin-bottom: 15px;
+        width: 250px;
+    }
+
+    .content-links-container{
+        margin-top: 15px;
+    }
+}
+
+        
+    
+  
+

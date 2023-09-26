@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Planets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h3 class="page-title">The Planets</h3>
+            <img class="hamburger-icon" src="assets/icon-hamburger.svg" alt="hamburger-icon">
+            <ul class="navigation">
+                <li><a class="planets mercury 0">Mercury</a></li>
+                <li><a class="planets venus 1">Venus</a></li>
+                <li><a class="planets earth 2">Earth</a></li>
+                <li><a class="planets mars 3">Mars</a></li>
+                <li><a class="planets jupiter 4">Jupiter</a></li>
+                <li><a class="planets saturn 5">Saturn</a></li>
+                <li><a class="planets uranus 6">Uranus</a></li>
+                <li><a class="planets neptune 7">Neptune</a></li>
+            </ul>
+           
+        </nav>
+        <div class="mobile-navigation-container">
+            <ul class="mobile-navigation">
+                <li><svg class="mobile-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#DEF4FC"/>
+                  </svg><a class="planets mercury 0">Mercury</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#F7CC7F"/>
+                  </svg><a class="planets venus 1">Venus</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#545BFE"/>
+                  </svg><a class="planets earth 2">Earth</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#FF6A45"/>
+                  </svg><a class="planets mars 3">Mars</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#ECAD7A"/>
+                  </svg><a class="planets jupiter 4">Jupiter</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#ECAD7A"/>
+                  </svg><a class="planets saturn 5">Saturn</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#FCCB6B"/>
+                  </svg><a class="planets uranus 6">Uranus</a></li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="10" fill="#FCCB6B"/>
+                  </svg><a class="planets neptune 7">Neptune</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="mobile-content-links-container">
+        <div class="content-links overview active earth">
+            <p class="content-number ">01</p><span>Overview</span>
+        </div>
+        <div class="content-links structure earth">
+            <p class="content-number ">02</p><span>Internal Structure</span>
+        </div>  
+        <div class="content-links geology earth">
+            <p class="content-number ">03</p><span>Surface Geology</span>
+        </div>    
+    </div>
+    <main class="main-grid">
+        
+        <img class="planet-img earth" src="assets/planet-earth.svg" alt="a picture of earth">
+        <div class="planet-info-container">
+            <h1 class="planet-name">Earth</h1>
+            <p class="planet-description">Third planet from the Sun and the only known planet to harbor life. 
+                About 29.2% of Earth's surface is land with remaining 70.8% is covered with water. Earth's distance 
+                from the Sun, physical properties and geological history have allowed life to evolve and thrive.</p>
+            
+        </div>
+        <div class="content-links-container">
+            <div class="content-links overview active earth">
+                <p class="content-number ">01</p><span>Overview</span>
+            </div>
+            <div class="content-links structure earth">
+                <p class="content-number ">02</p><span>Internal Structure</span>
+            </div>  
+            <div class="content-links geology earth">
+                <p class="content-number ">03</p><span>Surface Geology</span>
+            </div>    
+        </div>
+        
+    </main>
+    <footer>
+        <div class="stat-container">
+            <h4 class="stat-heading">Rotation Time</h4>
+            <p class="rotation">0.99 days</p>
+        </div>
+        <div class="stat-container">
+            <h4 class="stat-heading">Revolution Time</h4>
+            <p class="revolution">365.26 days</p>
+        </div>
+        <div class="stat-container">
+            <h4 class="stat-heading">Radius</h4>
+            <p class="radius">6,371 km</p>
+        </div>
+        <div class="stat-container">
+            <h4 class="stat-heading">Average Temp</h4>
+            <p class="temp">16°c</p>
+        </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+    <script type="module"  src="planetData.js"></script>
+</body>
+</html>
