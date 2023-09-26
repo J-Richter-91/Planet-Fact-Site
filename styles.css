@@ -326,6 +326,7 @@ footer{
     .planet-img {
         grid-column: auto;
         grid-row: auto; /* Reset grid-row */
+        margin-top: 50px;
     }
     .planet-info-container {
         align-self: center;
