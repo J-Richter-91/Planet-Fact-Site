@@ -14,9 +14,9 @@ let previousContent = '';
 let currentIndex = 2;
 
 
-import { planetData } from "/planetData.js"
-import { currentPlanet } from "/planetData.js";
-import { previousPlanet } from "/planetData.js";
+import { planetData } from "./planetData.js"
+import { currentPlanet } from "./planetData.js";
+import { previousPlanet } from "./planetData.js";
 
 hamburgerIcon.addEventListener("click", () => {
     navigation.style.display = "flex"
