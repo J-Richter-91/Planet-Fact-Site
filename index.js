@@ -30,10 +30,8 @@ planetLinks.forEach(link => {
 });
 
 console.log(previousPlanet)
-//need to create a function that changes the planet info when 
-//a link is clicked
-//need to keep track of the planet name and index so we get accurate info 
-//when a link is clicked
+
+
 function changePlanet(planet, index){
     if(planet === currentPlanet.name) return null
     previousPlanet.name = currentPlanet.name
@@ -64,8 +62,7 @@ planetLinks.forEach(planet => {
     })
 })
 
-//make a function that will change the data based off of 
-//which link the user clicks on
+
 
 function switchContent(content){
      currentContent = content;
